@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        sh 'sudo usermod -aG docker ec2-user'
+        
         app = docker.build 'hello-world:latest'
     }
 
